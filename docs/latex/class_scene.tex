@@ -1,0 +1,334 @@
+\hypertarget{class_scene}{}\doxysection{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+This class describes a scene.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
+\mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_abb3b6efc6fdba03cd96436edaf08a967}\label{class_scene_abb3b6efc6fdba03cd96436edaf08a967}} 
+void \mbox{\hyperlink{class_scene_abb3b6efc6fdba03cd96436edaf08a967}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_ae1b864ad69216f68b5c588477c87ec20}\label{class_scene_ae1b864ad69216f68b5c588477c87ec20}} 
+void \mbox{\hyperlink{class_scene_ae1b864ad69216f68b5c588477c87ec20}{load}} ()
+\begin{DoxyCompactList}\small\item\em Loads the scene information and data from the Data Base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a4b7a9fe651e9867af963d241cae7589c}\label{class_scene_a4b7a9fe651e9867af963d241cae7589c}} 
+void \mbox{\hyperlink{class_scene_a4b7a9fe651e9867af963d241cae7589c}{input}} ()
+\begin{DoxyCompactList}\small\item\em Manage the imput of the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_ad45d9619a36c002c97f6c535e7fb483c}\label{class_scene_ad45d9619a36c002c97f6c535e7fb483c}} 
+void \mbox{\hyperlink{class_scene_ad45d9619a36c002c97f6c535e7fb483c}{check}} ()
+\begin{DoxyCompactList}\small\item\em Checks the game fields following the rules to determine a winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_ad125faa5d5d81d24093c9b1b2f49ce3d}{reset}} (bool r)
+\begin{DoxyCompactList}\small\item\em Resets the game cells. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a4bd876fa0a8118d169b7b31c9df7601b}{update}} (float dt)
+\begin{DoxyCompactList}\small\item\em Updates the scene with the given dt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a4765da2d8e6ddb692814c7ee77af8210}{draw}} (sf\+::\+Render\+Texture \&screen)
+\begin{DoxyCompactList}\small\item\em Draw the scene objects in the \mbox{\hyperlink{struct_texture}{Texture}} given. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_acbb2b06675058e66a02b79bc5f2b2760}\label{class_scene_acbb2b06675058e66a02b79bc5f2b2760}} 
+void \mbox{\hyperlink{class_scene_acbb2b06675058e66a02b79bc5f2b2760}{end}} ()
+\begin{DoxyCompactList}\small\item\em Release the scene data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_aea32a48897894beb17ed2c731584b83c}{save\+DB}} (sqlite3 $\ast$db)
+\begin{DoxyCompactList}\small\item\em Saves the scene data in the db. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a8d2d131a2724d23bcb34d330d0c881f5}{load\+DB}} (sqlite3 $\ast$db)
+\begin{DoxyCompactList}\small\item\em Loads the scene data form the db. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a712186a9d6adc2194e25fbc3f361a88d}{add\+Object}} (int type)
+\begin{DoxyCompactList}\small\item\em Adds an object to the scene data, it is used in imgui editor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a37c90983da2845c2ce6a72ef13133a3a}{add\+Object}} (int id, const char $\ast$tag, bool enable, int type, int order, float px, float py, float angle, float scx, float scy, float sx, float sy, int cr, int cg, int cb, int ca, int fcr, int fcg, int fcb, int fca, int text\+\_\+id, const char $\ast$text, const char $\ast$path, float vx, float vy, int value)
+\begin{DoxyCompactList}\small\item\em Function used in the callback function for Objects, using the data collected form the db. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_ac2695cd5b32c31b4a3cc52d816bb361f}{set\+Config}} (int turn, int score1, int score2, const char $\ast$token1, const char $\ast$token2, const char $\ast$player1\+\_\+name, const char $\ast$player2\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Sets the configuration with the data loaded from the Data Base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a43df905fe1d13daaab491c308734616b}\label{class_scene_a43df905fe1d13daaab491c308734616b}} 
+void \mbox{\hyperlink{class_scene_a43df905fe1d13daaab491c308734616b}{del\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the selected object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_ad72ff0ccb313e818aa5352f07651828c}\label{class_scene_ad72ff0ccb313e818aa5352f07651828c}} 
+void \mbox{\hyperlink{class_scene_ad72ff0ccb313e818aa5352f07651828c}{imgui}} ()
+\begin{DoxyCompactList}\small\item\em Show the editor information from the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_aa282fc96d7d44032944aad7b2850c21d}\label{class_scene_aa282fc96d7d44032944aad7b2850c21d}} 
+void \mbox{\hyperlink{class_scene_aa282fc96d7d44032944aad7b2850c21d}{fields\+Imgui}} ()
+\begin{DoxyCompactList}\small\item\em Show the fields window in the editor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a601b60d91a1d5e4700a35e8e15be2b60}\label{class_scene_a601b60d91a1d5e4700a35e8e15be2b60}} 
+void \mbox{\hyperlink{class_scene_a601b60d91a1d5e4700a35e8e15be2b60}{config\+Imgui}} ()
+\begin{DoxyCompactList}\small\item\em Shows the configuration window in the editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_scene_afdd8ce8524d9cd06a7c552c3a905ff13}{load\+Callback\+Objects}} (void $\ast$data, int argc, char $\ast$$\ast$argv, char $\ast$$\ast$az\+Col\+Name)
+\begin{DoxyCompactList}\small\item\em Load callback function for objects. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_scene_a596dd31c2687d5cf77bb4e4354464e4e}{load\+Callback\+Config}} (void $\ast$data, int argc, char $\ast$$\ast$argv, char $\ast$$\ast$az\+Col\+Name)
+\begin{DoxyCompactList}\small\item\em Load callback function for configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_aea1e3d0735dbc674e8bf0c35f9871aa9}{Scene}} (const \mbox{\hyperlink{class_scene}{Scene}} \&n)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a scene. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_aea1e3d0735dbc674e8bf0c35f9871aa9}\label{class_scene_aea1e3d0735dbc674e8bf0c35f9871aa9}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene}{Scene}} \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n} & \mbox{\hyperlink{class_scene}{Scene}} to copy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a37c90983da2845c2ce6a72ef13133a3a}\label{class_scene_a37c90983da2845c2ce6a72ef13133a3a}} 
+\index{Scene@{Scene}!addObject@{addObject}}
+\index{addObject@{addObject}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Scene\+::add\+Object (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const char $\ast$}]{tag,  }\item[{bool}]{enable,  }\item[{int}]{type,  }\item[{int}]{order,  }\item[{float}]{px,  }\item[{float}]{py,  }\item[{float}]{angle,  }\item[{float}]{scx,  }\item[{float}]{scy,  }\item[{float}]{sx,  }\item[{float}]{sy,  }\item[{int}]{cr,  }\item[{int}]{cg,  }\item[{int}]{cb,  }\item[{int}]{ca,  }\item[{int}]{fcr,  }\item[{int}]{fcg,  }\item[{int}]{fcb,  }\item[{int}]{fca,  }\item[{int}]{text\+\_\+id,  }\item[{const char $\ast$}]{text,  }\item[{const char $\ast$}]{path,  }\item[{float}]{vx,  }\item[{float}]{vy,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Function used in the callback function for Objects, using the data collected form the db. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em id} & The identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em tag} & The tag \\
+\hline
+\mbox{\texttt{ in}}  & {\em enable} & The enable \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & The type \\
+\hline
+\mbox{\texttt{ in}}  & {\em order} & The order \\
+\hline
+\mbox{\texttt{ in}}  & {\em px} & Position x \\
+\hline
+\mbox{\texttt{ in}}  & {\em py} & Position y \\
+\hline
+\mbox{\texttt{ in}}  & {\em angle} & The angle \\
+\hline
+\mbox{\texttt{ in}}  & {\em scx} & Scale x \\
+\hline
+\mbox{\texttt{ in}}  & {\em scy} & Scale y \\
+\hline
+\mbox{\texttt{ in}}  & {\em sx} & Size x \\
+\hline
+\mbox{\texttt{ in}}  & {\em sy} & Size y \\
+\hline
+\mbox{\texttt{ in}}  & {\em cr} & Red color value \\
+\hline
+\mbox{\texttt{ in}}  & {\em cg} & Green color value \\
+\hline
+\mbox{\texttt{ in}}  & {\em cb} & Blue color value \\
+\hline
+\mbox{\texttt{ in}}  & {\em ca} & Alpha value \\
+\hline
+\mbox{\texttt{ in}}  & {\em fcr} & Outline red value \\
+\hline
+\mbox{\texttt{ in}}  & {\em fcg} & Outline green value \\
+\hline
+\mbox{\texttt{ in}}  & {\em fcb} & Outline blue value \\
+\hline
+\mbox{\texttt{ in}}  & {\em fca} & Outline alpha value \\
+\hline
+\mbox{\texttt{ in}}  & {\em text\+\_\+id} & The texture identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em text} & The text \\
+\hline
+\mbox{\texttt{ in}}  & {\em path} & The path \\
+\hline
+\mbox{\texttt{ in}}  & {\em vx} & Velocity x \\
+\hline
+\mbox{\texttt{ in}}  & {\em vy} & Velocity t \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & The value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a712186a9d6adc2194e25fbc3f361a88d}\label{class_scene_a712186a9d6adc2194e25fbc3f361a88d}} 
+\index{Scene@{Scene}!addObject@{addObject}}
+\index{addObject@{addObject}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Scene\+::add\+Object (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Adds an object to the scene data, it is used in imgui editor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & The type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a4765da2d8e6ddb692814c7ee77af8210}\label{class_scene_a4765da2d8e6ddb692814c7ee77af8210}} 
+\index{Scene@{Scene}!draw@{draw}}
+\index{draw@{draw}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Scene\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Texture \&}]{screen }\end{DoxyParamCaption})}
+
+
+
+Draw the scene objects in the \mbox{\hyperlink{struct_texture}{Texture}} given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & The screen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a596dd31c2687d5cf77bb4e4354464e4e}\label{class_scene_a596dd31c2687d5cf77bb4e4354464e4e}} 
+\index{Scene@{Scene}!loadCallbackConfig@{loadCallbackConfig}}
+\index{loadCallbackConfig@{loadCallbackConfig}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{loadCallbackConfig()}{loadCallbackConfig()}}
+{\footnotesize\ttfamily static int Scene\+::load\+Callback\+Config (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$$\ast$}]{az\+Col\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load callback function for configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em data} & The data \\
+\hline
+\mbox{\texttt{ in}}  & {\em argc} & The count of arguments \\
+\hline
+ & {\em argv} & The arguments array \\
+\hline
+ & {\em az\+Col\+Name} & The az col name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{ description\+\_\+of\+\_\+the\+\_\+return\+\_\+value \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_afdd8ce8524d9cd06a7c552c3a905ff13}\label{class_scene_afdd8ce8524d9cd06a7c552c3a905ff13}} 
+\index{Scene@{Scene}!loadCallbackObjects@{loadCallbackObjects}}
+\index{loadCallbackObjects@{loadCallbackObjects}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{loadCallbackObjects()}{loadCallbackObjects()}}
+{\footnotesize\ttfamily static int Scene\+::load\+Callback\+Objects (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$$\ast$}]{az\+Col\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load callback function for objects. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em data} & The data \\
+\hline
+\mbox{\texttt{ in}}  & {\em argc} & The count of arguments \\
+\hline
+ & {\em argv} & The arguments array \\
+\hline
+ & {\em az\+Col\+Name} & The az col name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{ description\+\_\+of\+\_\+the\+\_\+return\+\_\+value \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a8d2d131a2724d23bcb34d330d0c881f5}\label{class_scene_a8d2d131a2724d23bcb34d330d0c881f5}} 
+\index{Scene@{Scene}!loadDB@{loadDB}}
+\index{loadDB@{loadDB}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{loadDB()}{loadDB()}}
+{\footnotesize\ttfamily void Scene\+::load\+DB (\begin{DoxyParamCaption}\item[{sqlite3 $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+Loads the scene data form the db. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & The database \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_ad125faa5d5d81d24093c9b1b2f49ce3d}\label{class_scene_ad125faa5d5d81d24093c9b1b2f49ce3d}} 
+\index{Scene@{Scene}!reset@{reset}}
+\index{reset@{reset}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Scene\+::reset (\begin{DoxyParamCaption}\item[{bool}]{r }\end{DoxyParamCaption})}
+
+
+
+Resets the game cells. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em r} & Reset request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_aea32a48897894beb17ed2c731584b83c}\label{class_scene_aea32a48897894beb17ed2c731584b83c}} 
+\index{Scene@{Scene}!saveDB@{saveDB}}
+\index{saveDB@{saveDB}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{saveDB()}{saveDB()}}
+{\footnotesize\ttfamily void Scene\+::save\+DB (\begin{DoxyParamCaption}\item[{sqlite3 $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+Saves the scene data in the db. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & The database \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_ac2695cd5b32c31b4a3cc52d816bb361f}\label{class_scene_ac2695cd5b32c31b4a3cc52d816bb361f}} 
+\index{Scene@{Scene}!setConfig@{setConfig}}
+\index{setConfig@{setConfig}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setConfig()}{setConfig()}}
+{\footnotesize\ttfamily void Scene\+::set\+Config (\begin{DoxyParamCaption}\item[{int}]{turn,  }\item[{int}]{score1,  }\item[{int}]{score2,  }\item[{const char $\ast$}]{token1,  }\item[{const char $\ast$}]{token2,  }\item[{const char $\ast$}]{player1\+\_\+name,  }\item[{const char $\ast$}]{player2\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Sets the configuration with the data loaded from the Data Base. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em turn} & The turn \\
+\hline
+\mbox{\texttt{ in}}  & {\em score1} & The score 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em score2} & The score 2 \\
+\hline
+\mbox{\texttt{ in}}  & {\em token1} & The token 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em token2} & The token 2 \\
+\hline
+\mbox{\texttt{ in}}  & {\em player1\+\_\+name} & The player 1 name \\
+\hline
+\mbox{\texttt{ in}}  & {\em player2\+\_\+name} & The player 2 name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a4bd876fa0a8118d169b7b31c9df7601b}\label{class_scene_a4bd876fa0a8118d169b7b31c9df7601b}} 
+\index{Scene@{Scene}!update@{update}}
+\index{update@{update}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scene\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Updates the scene with the given dt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & Delta Time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/scene.\+h\end{DoxyCompactItemize}

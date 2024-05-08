@@ -1,0 +1,119 @@
+\hypertarget{class_field}{}\doxysection{Field Class Reference}
+\label{class_field}\index{Field@{Field}}
+
+
+This class describes a field.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+field.\+h$>$}
+
+Inheritance diagram for Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_field}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_field_a3e804c92273d9159f413f227b535c672}\label{class_field_a3e804c92273d9159f413f227b535c672}} 
+\mbox{\hyperlink{class_field_a3e804c92273d9159f413f227b535c672}{Field}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_a4bbc093909349354b46c7775ac30e2e1}\label{class_field_a4bbc093909349354b46c7775ac30e2e1}} 
+virtual \mbox{\hyperlink{class_field_a4bbc093909349354b46c7775ac30e2e1}{$\sim$\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_a80407f0d4f8cfb0148b2363d9616fcb4}\label{class_field_a80407f0d4f8cfb0148b2363d9616fcb4}} 
+void \mbox{\hyperlink{class_field_a80407f0d4f8cfb0148b2363d9616fcb4}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_a12df28570fbe7323cdac8a243297e6b0}\label{class_field_a12df28570fbe7323cdac8a243297e6b0}} 
+void \mbox{\hyperlink{class_field_a12df28570fbe7323cdac8a243297e6b0}{imgui}} () override
+\begin{DoxyCompactList}\small\item\em Loads the information used by imgui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_field_acb84a45df989d2008b3098cb046c8420}{draw}} (sf\+::\+Render\+Texture \&texture) override
+\begin{DoxyCompactList}\small\item\em Draw the object in the texture given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_field_a1fae0b053ed8fdd28b2d37897d2cd5f6}{set\+\_\+token}} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em Sets the token sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_field_aca8d38bb4feac8e623b3561036b5ca87}{set\+\_\+value}} (int \mbox{\hyperlink{class_field_a7831b0bf5420e506885aea676ad026a3}{value}})
+\begin{DoxyCompactList}\small\item\em Sets the value of the cell. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_field_a7831b0bf5420e506885aea676ad026a3}{value}} ()
+\begin{DoxyCompactList}\small\item\em Returns the value of the cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_field_a1222497e50e48b3d2350c3a46dd19db4}\label{class_field_a1222497e50e48b3d2350c3a46dd19db4}} 
+{\bfseries Field} (const \mbox{\hyperlink{class_field}{Field}} \&other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a field. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_field_acb84a45df989d2008b3098cb046c8420}\label{class_field_acb84a45df989d2008b3098cb046c8420}} 
+\index{Field@{Field}!draw@{draw}}
+\index{draw@{draw}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Field\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Texture \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the object in the texture given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_rectangle_a1e6f1dc1680a35a41aac9c9ef6418073}{Rectangle}}.
+
+\mbox{\Hypertarget{class_field_a1fae0b053ed8fdd28b2d37897d2cd5f6}\label{class_field_a1fae0b053ed8fdd28b2d37897d2cd5f6}} 
+\index{Field@{Field}!set\_token@{set\_token}}
+\index{set\_token@{set\_token}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{set\_token()}{set\_token()}}
+{\footnotesize\ttfamily void Field\+::set\+\_\+token (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Sets the token sprite. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filepath} & The filepath \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_field_aca8d38bb4feac8e623b3561036b5ca87}\label{class_field_aca8d38bb4feac8e623b3561036b5ca87}} 
+\index{Field@{Field}!set\_value@{set\_value}}
+\index{set\_value@{set\_value}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{set\_value()}{set\_value()}}
+{\footnotesize\ttfamily void Field\+::set\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the cell. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_field_a7831b0bf5420e506885aea676ad026a3}\label{class_field_a7831b0bf5420e506885aea676ad026a3}} 
+\index{Field@{Field}!value@{value}}
+\index{value@{value}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily int Field\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the cell. 
+
+\begin{DoxyReturn}{Returns}
+value of the cell. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game\+\_\+field.\+h\end{DoxyCompactItemize}

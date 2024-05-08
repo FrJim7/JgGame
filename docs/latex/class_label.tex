@@ -1,0 +1,539 @@
+\hypertarget{class_label}{}\doxysection{Label Class Reference}
+\label{class_label}\index{Label@{Label}}
+
+
+This class describes a label.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+label.\+h$>$}
+
+Inheritance diagram for Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_label}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_label_af8f2bccf9faadcb2ca964bd2347dde24}\label{class_label_af8f2bccf9faadcb2ca964bd2347dde24}} 
+\mbox{\hyperlink{class_label_af8f2bccf9faadcb2ca964bd2347dde24}{Label}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_label_a21f4dd9aa297a03f641dd689ea291e2b}\label{class_label_a21f4dd9aa297a03f641dd689ea291e2b}} 
+virtual \mbox{\hyperlink{class_label_a21f4dd9aa297a03f641dd689ea291e2b}{$\sim$\+Label}} () override
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_label_afa56dcb7a6473b61a981831407bcc97c}\label{class_label_afa56dcb7a6473b61a981831407bcc97c}} 
+void \mbox{\hyperlink{class_label_afa56dcb7a6473b61a981831407bcc97c}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_label_a2b30b2c601caae3c23303575d7561307}\label{class_label_a2b30b2c601caae3c23303575d7561307}} 
+void \mbox{\hyperlink{class_label_a2b30b2c601caae3c23303575d7561307}{imgui}} () override
+\begin{DoxyCompactList}\small\item\em Loads the information used by imgui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_ab6036bfbecfffa875c895b926f07826a}{update}} (float dt) override
+\begin{DoxyCompactList}\small\item\em Updates the object using the given dt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a8e68ab504a12f6c042934808a53dc194}{draw}} (sf\+::\+Render\+Texture \&texture) override
+\begin{DoxyCompactList}\small\item\em Draws the object in the texture given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a79e6b2eb8b984a32a8b7cc251a114785}{parse\+Path}} (const char $\ast$\mbox{\hyperlink{class_label_a5b410d143fa60948bc0746e95692bba9}{path}})
+\begin{DoxyCompactList}\small\item\em Takes an absolute path and makes it relative to the bin carpet in the folder. The texture must be in the \mbox{\hyperlink{class_game}{Game}} folder and outside the bin folder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_afc6e392ab5801e33e7f763836a6c4ff2}{set\+\_\+position}} (float px, float py) override
+\begin{DoxyCompactList}\small\item\em Sets the position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_adc8995c6ab96cb7da435153a387286b8}{set\+\_\+rotation}} (float \mbox{\hyperlink{class_label_a2c52d2095a4b14daac2cbd3ffcb13990}{rotation}}) override
+\begin{DoxyCompactList}\small\item\em Sets the rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a875f1c995df45aef87a47708208afa2a}{set\+\_\+scale}} (float scx, float scy) override
+\begin{DoxyCompactList}\small\item\em Sets the scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a592960d909bab004fa668a6569ccabe0}{set\+\_\+size}} (float sx, float sy) override
+\begin{DoxyCompactList}\small\item\em Sets the size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_adbf7a0add23b17631badcd0793f1e8b4}{set\+\_\+color}} (sf\+::\+Color \mbox{\hyperlink{class_label_a10414ef6861f8f6bc64d4666581dce54}{color}}) override
+\begin{DoxyCompactList}\small\item\em Sets the color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a7ceadd22e0a9065282eceed9e44f5eba}{set\+\_\+outlinecolor}} (sf\+::\+Color \mbox{\hyperlink{class_label_aeaa03b4f2ff20ca15786edc52af7f5f5}{o\+\_\+color}}) override
+\begin{DoxyCompactList}\small\item\em Sets the outlinecolor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a9718c2b5b5f4e3fd2b97b5576e6487d2}{set\+\_\+text}} (const char $\ast$\mbox{\hyperlink{class_label_af7b413ab2069f355ba8225edf43337d1}{text}}) override
+\begin{DoxyCompactList}\small\item\em Sets the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a7304eb318435b22aa28a45b7ab8c6f42}{set\+\_\+path}} (const char $\ast$\mbox{\hyperlink{class_label_a5b410d143fa60948bc0746e95692bba9}{path}}) override
+\begin{DoxyCompactList}\small\item\em Sets the path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_ab722546079160e375c7e9020dd1068ac}{set\+\_\+velocity}} (float vx, float vy) override
+\begin{DoxyCompactList}\small\item\em Sets the velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a5f99e5de6a739951bf6b2288a3445e1b}{set\+\_\+texture}} (const char $\ast$filepath) override
+\begin{DoxyCompactList}\small\item\em Sets the texture. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_label_a2c52d2095a4b14daac2cbd3ffcb13990}{rotation}} () override
+\begin{DoxyCompactList}\small\item\em Returns rotation. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_label_a3d5fa3664e08cf11dcf99d8e292daf4a}{position}} () override
+\begin{DoxyCompactList}\small\item\em Returns the position. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_label_ad9ba1ef6abd24669638157ea4508a96f}{scale}} () override
+\begin{DoxyCompactList}\small\item\em Returns the scale. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_label_a6b8f731ac8375e6165b8f8833f0f88ad}{size}} () override
+\begin{DoxyCompactList}\small\item\em Returns the size. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_label_a84f7fa6c625a32f11e0af6ce59024525}{area}} () override
+\begin{DoxyCompactList}\small\item\em Returns the area of the object. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{class_label_a10414ef6861f8f6bc64d4666581dce54}{color}} () override
+\begin{DoxyCompactList}\small\item\em Returns the fill color. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{class_label_aeaa03b4f2ff20ca15786edc52af7f5f5}{o\+\_\+color}} () override
+\begin{DoxyCompactList}\small\item\em Returns the outline color. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_label_af7b413ab2069f355ba8225edf43337d1}{text}} () override
+\begin{DoxyCompactList}\small\item\em Returns the text. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_label_a5b410d143fa60948bc0746e95692bba9}{path}} () override
+\begin{DoxyCompactList}\small\item\em Returns the path of the loaded file. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_label_ac2d070b5664ce55b0d7c80eb39a71c7a}{velocity}} () override
+\begin{DoxyCompactList}\small\item\em Return the velocity. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_label_a75f38d9018961326ca3c5af0aa91e39c}{texture\+\_\+id}} () override
+\begin{DoxyCompactList}\small\item\em Returns the last texture used id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_label_a493ef0d6013d5f1712dac3c5a4ffd009}\label{class_label_a493ef0d6013d5f1712dac3c5a4ffd009}} 
+{\bfseries Label} (const \mbox{\hyperlink{class_label}{Label}} \&n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a label. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_label_a84f7fa6c625a32f11e0af6ce59024525}\label{class_label_a84f7fa6c625a32f11e0af6ce59024525}} 
+\index{Label@{Label}!area@{area}}
+\index{area@{area}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Label\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the area of the object. 
+
+\begin{DoxyReturn}{Returns}
+The area. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a6973e229fa41115a8c21149a8fdd4e36}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a10414ef6861f8f6bc64d4666581dce54}\label{class_label_a10414ef6861f8f6bc64d4666581dce54}} 
+\index{Label@{Label}!color@{color}}
+\index{color@{color}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily sf\+::\+Color Label\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the fill color. 
+
+\begin{DoxyReturn}{Returns}
+The color. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_ab8d3e00b5bc4aab7160639ae4b07de41}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a8e68ab504a12f6c042934808a53dc194}\label{class_label_a8e68ab504a12f6c042934808a53dc194}} 
+\index{Label@{Label}!draw@{draw}}
+\index{draw@{draw}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Label\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Texture \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the object in the texture given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_aa8d6afa511525f1eb243392cef635a2c}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_aeaa03b4f2ff20ca15786edc52af7f5f5}\label{class_label_aeaa03b4f2ff20ca15786edc52af7f5f5}} 
+\index{Label@{Label}!o\_color@{o\_color}}
+\index{o\_color@{o\_color}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{o\_color()}{o\_color()}}
+{\footnotesize\ttfamily sf\+::\+Color Label\+::o\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the outline color. 
+
+\begin{DoxyReturn}{Returns}
+The color. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7545ddca9ba29a4b92731be1d3fb52f2}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a79e6b2eb8b984a32a8b7cc251a114785}\label{class_label_a79e6b2eb8b984a32a8b7cc251a114785}} 
+\index{Label@{Label}!parsePath@{parsePath}}
+\index{parsePath@{parsePath}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{parsePath()}{parsePath()}}
+{\footnotesize\ttfamily void Label\+::parse\+Path (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Takes an absolute path and makes it relative to the bin carpet in the folder. The texture must be in the \mbox{\hyperlink{class_game}{Game}} folder and outside the bin folder. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & The path to parse \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_a6c7562a02381976098ad2fc60ff7e6c8}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a5b410d143fa60948bc0746e95692bba9}\label{class_label_a5b410d143fa60948bc0746e95692bba9}} 
+\index{Label@{Label}!path@{path}}
+\index{path@{path}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily char$\ast$ Label\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the path of the loaded file. 
+
+\begin{DoxyReturn}{Returns}
+The path. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_add375403bfdc7fffe882bda52cfec424}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a3d5fa3664e08cf11dcf99d8e292daf4a}\label{class_label_a3d5fa3664e08cf11dcf99d8e292daf4a}} 
+\index{Label@{Label}!position@{position}}
+\index{position@{position}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Label\+::position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the position. 
+
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_afd5deac0c236f8555e29757bbd7bc3ba}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a2c52d2095a4b14daac2cbd3ffcb13990}\label{class_label_a2c52d2095a4b14daac2cbd3ffcb13990}} 
+\index{Label@{Label}!rotation@{rotation}}
+\index{rotation@{rotation}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily float Label\+::rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns rotation. 
+
+\begin{DoxyReturn}{Returns}
+The rotation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aa8d86262f2eb30753848fe707b312d33}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_ad9ba1ef6abd24669638157ea4508a96f}\label{class_label_ad9ba1ef6abd24669638157ea4508a96f}} 
+\index{Label@{Label}!scale@{scale}}
+\index{scale@{scale}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Label\+::scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the scale. 
+
+\begin{DoxyReturn}{Returns}
+The scale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a102c922f300fc3cbb6850760ab023d8c}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_adbf7a0add23b17631badcd0793f1e8b4}\label{class_label_adbf7a0add23b17631badcd0793f1e8b4}} 
+\index{Label@{Label}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_color()}{set\_color()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & The color \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a1862346051bc702915ff23ce51aba077}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a7ceadd22e0a9065282eceed9e44f5eba}\label{class_label_a7ceadd22e0a9065282eceed9e44f5eba}} 
+\index{Label@{Label}!set\_outlinecolor@{set\_outlinecolor}}
+\index{set\_outlinecolor@{set\_outlinecolor}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_outlinecolor()}{set\_outlinecolor()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+outlinecolor (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{o\+\_\+color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the outlinecolor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em o\+\_\+color} & The o color \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a50dbf7a7b563fc4e597e7af4cfced146}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a7304eb318435b22aa28a45b7ab8c6f42}\label{class_label_a7304eb318435b22aa28a45b7ab8c6f42}} 
+\index{Label@{Label}!set\_path@{set\_path}}
+\index{set\_path@{set\_path}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_path()}{set\_path()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+path (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & The path \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7490b2ed79b9d75ab5ecd93e193402fd}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_afc6e392ab5801e33e7f763836a6c4ff2}\label{class_label_afc6e392ab5801e33e7f763836a6c4ff2}} 
+\index{Label@{Label}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{float}]{px,  }\item[{float}]{py }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em px} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em py} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a0d9423149dd3f0397afd3bc537486edc}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_adc8995c6ab96cb7da435153a387286b8}\label{class_label_adc8995c6ab96cb7da435153a387286b8}} 
+\index{Label@{Label}!set\_rotation@{set\_rotation}}
+\index{set\_rotation@{set\_rotation}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_rotation()}{set\_rotation()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the rotation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rotation} & The rotation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a38c6d4f4f4f58dd362fef7e34613918e}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a875f1c995df45aef87a47708208afa2a}\label{class_label_a875f1c995df45aef87a47708208afa2a}} 
+\index{Label@{Label}!set\_scale@{set\_scale}}
+\index{set\_scale@{set\_scale}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_scale()}{set\_scale()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{scx,  }\item[{float}]{scy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the scale. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em scx} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em scy} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_afdc1e4f4a22a09424c693fc9fff5a441}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a592960d909bab004fa668a6569ccabe0}\label{class_label_a592960d909bab004fa668a6569ccabe0}} 
+\index{Label@{Label}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{float}]{sx,  }\item[{float}]{sy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sx} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em sy} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a89ffc3256ceee664a90584d192c86e23}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a9718c2b5b5f4e3fd2b97b5576e6487d2}\label{class_label_a9718c2b5b5f4e3fd2b97b5576e6487d2}} 
+\index{Label@{Label}!set\_text@{set\_text}}
+\index{set\_text@{set\_text}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_text()}{set\_text()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em text} & The text \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a53f43a020a08bb7e38e053040dd604e1}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a5f99e5de6a739951bf6b2288a3445e1b}\label{class_label_a5f99e5de6a739951bf6b2288a3445e1b}} 
+\index{Label@{Label}!set\_texture@{set\_texture}}
+\index{set\_texture@{set\_texture}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_texture()}{set\_texture()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filepath} & The filepath \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a18418efc344b94453dbd4c7cf3c78452}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_ab722546079160e375c7e9020dd1068ac}\label{class_label_ab722546079160e375c7e9020dd1068ac}} 
+\index{Label@{Label}!set\_velocity@{set\_velocity}}
+\index{set\_velocity@{set\_velocity}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{set\_velocity()}{set\_velocity()}}
+{\footnotesize\ttfamily void Label\+::set\+\_\+velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the velocity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vx} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em vy} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a1d9892f8aed5109a601d0ef16b345c8b}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a6b8f731ac8375e6165b8f8833f0f88ad}\label{class_label_a6b8f731ac8375e6165b8f8833f0f88ad}} 
+\index{Label@{Label}!size@{size}}
+\index{size@{size}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Label\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the size. 
+
+\begin{DoxyReturn}{Returns}
+The size. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a62e376c80e370a53fc215e64d9f58b54}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_af7b413ab2069f355ba8225edf43337d1}\label{class_label_af7b413ab2069f355ba8225edf43337d1}} 
+\index{Label@{Label}!text@{text}}
+\index{text@{text}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily char$\ast$ Label\+::text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the text. 
+
+\begin{DoxyReturn}{Returns}
+The text. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a40403a5b6cf4afde01de7ac0886f8a97}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_a75f38d9018961326ca3c5af0aa91e39c}\label{class_label_a75f38d9018961326ca3c5af0aa91e39c}} 
+\index{Label@{Label}!texture\_id@{texture\_id}}
+\index{texture\_id@{texture\_id}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{texture\_id()}{texture\_id()}}
+{\footnotesize\ttfamily unsigned int Label\+::texture\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the last texture used id. 
+
+\begin{DoxyReturn}{Returns}
+The id. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_abf16c5ac40801fdca3287db5c2333017}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_ab6036bfbecfffa875c895b926f07826a}\label{class_label_ab6036bfbecfffa875c895b926f07826a}} 
+\index{Label@{Label}!update@{update}}
+\index{update@{update}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Label\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the object using the given dt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & Delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a9afbdf9d84d6f29b8a4da23d3a1880ca}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_label_ac2d070b5664ce55b0d7c80eb39a71c7a}\label{class_label_ac2d070b5664ce55b0d7c80eb39a71c7a}} 
+\index{Label@{Label}!velocity@{velocity}}
+\index{velocity@{velocity}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{velocity()}{velocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Label\+::velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the velocity. 
+
+\begin{DoxyReturn}{Returns}
+The velocity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aee8317583fa8ce40d32b79cec5f9d098}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game\+\_\+label.\+h\end{DoxyCompactItemize}

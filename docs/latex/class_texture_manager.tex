@@ -1,0 +1,215 @@
+\hypertarget{class_texture_manager}{}\doxysection{Texture\+Manager Class Reference}
+\label{class_texture_manager}\index{TextureManager@{TextureManager}}
+
+
+This class describes a texture manager.  
+
+
+
+
+{\ttfamily \#include $<$texture\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_texture_manager_ad76abb178b37cedf4514eb0154349935}\label{class_texture_manager_ad76abb178b37cedf4514eb0154349935}} 
+\mbox{\hyperlink{class_texture_manager_ad76abb178b37cedf4514eb0154349935}{Texture\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_manager_a001d6d74674961db79987e3222682576}\label{class_texture_manager_a001d6d74674961db79987e3222682576}} 
+\mbox{\hyperlink{class_texture_manager_a001d6d74674961db79987e3222682576}{$\sim$\+Texture\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_manager_a651d07f7051f1a618a5c7193d8543ff1}\label{class_texture_manager_a651d07f7051f1a618a5c7193d8543ff1}} 
+void \mbox{\hyperlink{class_texture_manager_a651d07f7051f1a618a5c7193d8543ff1}{imgui}} ()
+\begin{DoxyCompactList}\small\item\em Loads the information used by imgui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_a0fdd72545d4df4b7b778b13e5d8f4f73}{show\+Textures\+Imgui}} (char $\ast$temp)
+\begin{DoxyCompactList}\small\item\em Shows the textures in imgui editor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_texture_manager_aa9f9912c751c1b5b4ef823d453111135}{add\+Texture}} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em Adds a texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_a1dbbf6b67e52d41c5824561b7a4e374d}{del\+Texture}} (int position)
+\begin{DoxyCompactList}\small\item\em Deletes a texture unused. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_a603d29169fa1e9b3df00f2a64117e603}{parse\+Path}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Takes an absolute path and makes it relative to the bin carpet in the folder. The texture must be in the \mbox{\hyperlink{class_game}{Game}} folder and outside the bin folder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_aed97d4bc8c7bb8c5fdbaa6dc2e3fbb39}{save\+DB}} (sqlite3 $\ast$db)
+\begin{DoxyCompactList}\small\item\em Saves the texture data in the db. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_ae56c6a9ec92e458833ff4fe6cc721668}{load\+DB}} (sqlite3 $\ast$db)
+\begin{DoxyCompactList}\small\item\em Loads the texture data in the db. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_ab9cdb6dea0c1838e4fa3680e6d5c648c}{get\+Texture}} (sf\+::\+Sprite \&spr, const char $\ast$filepath, unsigned int $\ast$last\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Gets the texture and applies to the sprite. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_manager_a5bd39a6935c77f80b5ec7613e4b89bad}\label{class_texture_manager_a5bd39a6935c77f80b5ec7613e4b89bad}} 
+void \mbox{\hyperlink{class_texture_manager_a5bd39a6935c77f80b5ec7613e4b89bad}{erase}} ()
+\begin{DoxyCompactList}\small\item\em Release the textures stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_texture_manager_a9f39d347b047090c95d3b344435b3ba8}{load\+Callback}} (void $\ast$data, int argc, char $\ast$$\ast$argv, char $\ast$$\ast$az\+Col\+Name)
+\begin{DoxyCompactList}\small\item\em Callback use to db queries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_manager_ae859e3c923367dbc7402e5e941903143}{Texture\+Manager}} (const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a texture manager. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_texture_manager_ae859e3c923367dbc7402e5e941903143}\label{class_texture_manager_ae859e3c923367dbc7402e5e941903143}} 
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{TextureManager()}{TextureManager()}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other} & The other \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_manager_aa9f9912c751c1b5b4ef823d453111135}\label{class_texture_manager_aa9f9912c751c1b5b4ef823d453111135}} 
+\index{TextureManager@{TextureManager}!addTexture@{addTexture}}
+\index{addTexture@{addTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{addTexture()}{addTexture()}}
+{\footnotesize\ttfamily bool Texture\+Manager\+::add\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Adds a texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filepath} & The filepath\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if added, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_manager_a1dbbf6b67e52d41c5824561b7a4e374d}\label{class_texture_manager_a1dbbf6b67e52d41c5824561b7a4e374d}} 
+\index{TextureManager@{TextureManager}!delTexture@{delTexture}}
+\index{delTexture@{delTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{delTexture()}{delTexture()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::del\+Texture (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+Deletes a texture unused. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em position} & The position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_manager_ab9cdb6dea0c1838e4fa3680e6d5c648c}\label{class_texture_manager_ab9cdb6dea0c1838e4fa3680e6d5c648c}} 
+\index{TextureManager@{TextureManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{spr,  }\item[{const char $\ast$}]{filepath,  }\item[{unsigned int $\ast$}]{last\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Gets the texture and applies to the sprite. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em spr} & The sprire \\
+\hline
+\mbox{\texttt{ in}}  & {\em filepath} & The filepath \\
+\hline
+ & {\em last\+\_\+id} & The last identifier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_manager_a9f39d347b047090c95d3b344435b3ba8}\label{class_texture_manager_a9f39d347b047090c95d3b344435b3ba8}} 
+\index{TextureManager@{TextureManager}!loadCallback@{loadCallback}}
+\index{loadCallback@{loadCallback}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{loadCallback()}{loadCallback()}}
+{\footnotesize\ttfamily static int Texture\+Manager\+::load\+Callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$$\ast$}]{az\+Col\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Callback use to db queries. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em data} & The data \\
+\hline
+\mbox{\texttt{ in}}  & {\em argc} & The count of arguments \\
+\hline
+ & {\em argv} & The arguments array \\
+\hline
+ & {\em az\+Col\+Name} & The az col name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{ description\+\_\+of\+\_\+the\+\_\+return\+\_\+value \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_manager_ae56c6a9ec92e458833ff4fe6cc721668}\label{class_texture_manager_ae56c6a9ec92e458833ff4fe6cc721668}} 
+\index{TextureManager@{TextureManager}!loadDB@{loadDB}}
+\index{loadDB@{loadDB}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{loadDB()}{loadDB()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::load\+DB (\begin{DoxyParamCaption}\item[{sqlite3 $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+Loads the texture data in the db. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & The database \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_manager_a603d29169fa1e9b3df00f2a64117e603}\label{class_texture_manager_a603d29169fa1e9b3df00f2a64117e603}} 
+\index{TextureManager@{TextureManager}!parsePath@{parsePath}}
+\index{parsePath@{parsePath}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{parsePath()}{parsePath()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::parse\+Path (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Takes an absolute path and makes it relative to the bin carpet in the folder. The texture must be in the \mbox{\hyperlink{class_game}{Game}} folder and outside the bin folder. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & The path to parse \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_manager_aed97d4bc8c7bb8c5fdbaa6dc2e3fbb39}\label{class_texture_manager_aed97d4bc8c7bb8c5fdbaa6dc2e3fbb39}} 
+\index{TextureManager@{TextureManager}!saveDB@{saveDB}}
+\index{saveDB@{saveDB}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{saveDB()}{saveDB()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::save\+DB (\begin{DoxyParamCaption}\item[{sqlite3 $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+Saves the texture data in the db. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & The database \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_manager_a0fdd72545d4df4b7b778b13e5d8f4f73}\label{class_texture_manager_a0fdd72545d4df4b7b778b13e5d8f4f73}} 
+\index{TextureManager@{TextureManager}!showTexturesImgui@{showTexturesImgui}}
+\index{showTexturesImgui@{showTexturesImgui}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{showTexturesImgui()}{showTexturesImgui()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::show\+Textures\+Imgui (\begin{DoxyParamCaption}\item[{char $\ast$}]{temp }\end{DoxyParamCaption})}
+
+
+
+Shows the textures in imgui editor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & The temporary \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/texture\+\_\+manager.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{class_game_manager}{}\doxysection{Game\+Manager Class Reference}
+\label{class_game_manager}\index{GameManager@{GameManager}}
+
+
+This class describes a game manager.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_manager_a61e2a83c22091ae08173f1968f756109}\label{class_game_manager_a61e2a83c22091ae08173f1968f756109}} 
+void \mbox{\hyperlink{class_game_manager_a61e2a83c22091ae08173f1968f756109}{init\+Im\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the im graphical user interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_a939e6a33d5ae31602f646a62cde0f2bb}{update\+Im\+Gui}} (sf\+::\+Render\+Texture \&render, sf\+::\+Time dT)
+\begin{DoxyCompactList}\small\item\em Updtae the im graphical user interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a27d4825eebeb327a42227316e7f2a101}\label{class_game_manager_a27d4825eebeb327a42227316e7f2a101}} 
+void \mbox{\hyperlink{class_game_manager_a27d4825eebeb327a42227316e7f2a101}{render\+Im\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em Render the im graphical user interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_manager}{Game\+Manager}} \& \mbox{\hyperlink{class_game_manager_afa37ab23c040b5225d567d4c9ab854e1}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Creates an static instance of the \mbox{\hyperlink{class_game_manager}{Game\+Manager}} class, only one can be created at any time,. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_manager_a2c362136f736c9df1313416922def5a6}\label{class_game_manager_a2c362136f736c9df1313416922def5a6}} 
+bool {\bfseries start\+\_\+imgui\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_a8abab416b6b2f317c9806a4b7a084af3}\label{class_game_manager_a8abab416b6b2f317c9806a4b7a084af3}} 
+\mbox{\hyperlink{class_scene}{Scene}} {\bfseries scene\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_a304b264e6b0378b7579fbd6b9dc52981}\label{class_game_manager_a304b264e6b0378b7579fbd6b9dc52981}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries inspectable\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_af63560f052a4de114078ce90044ab2c4}\label{class_game_manager_af63560f052a4de114078ce90044ab2c4}} 
+sf\+::\+Render\+Window {\bfseries r\+\_\+window\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_ae665e19a1c170a6d666f89e120fea8d2}\label{class_game_manager_ae665e19a1c170a6d666f89e120fea8d2}} 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} {\bfseries texture\+\_\+manager\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_manager_afe8fcd570918a0198f82d688ddddfb04}{Game\+Manager}} (const \mbox{\hyperlink{class_game_manager}{Game\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_manager_adbad7dd59f767836cb5280653f73eb57}\label{class_game_manager_adbad7dd59f767836cb5280653f73eb57}} 
+sqlite3 $\ast$ {\bfseries db}
+\item 
+\mbox{\Hypertarget{class_game_manager_a95b5b093a4b3a4d2f205b4aed029a889}\label{class_game_manager_a95b5b093a4b3a4d2f205b4aed029a889}} 
+Im\+Gui\+ID {\bfseries dockspace\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_aca7bd342e101545bfca0c85f81cb8fae}\label{class_game_manager_aca7bd342e101545bfca0c85f81cb8fae}} 
+Im\+Gui\+Viewport $\ast$ {\bfseries viewport}
+\item 
+\mbox{\Hypertarget{class_game_manager_a8451c050cde144fd46ce12a4ad906cff}\label{class_game_manager_a8451c050cde144fd46ce12a4ad906cff}} 
+Im\+Gui\+Window\+Flags {\bfseries dock\+\_\+flg\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_ab78533d950b8d1e293350461a85f7427}\label{class_game_manager_ab78533d950b8d1e293350461a85f7427}} 
+Im\+Gui\+Window\+Flags {\bfseries render\+\_\+flg\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_manager_aad24c572cf94b2642117c5cc06cd2b43}\label{class_game_manager_aad24c572cf94b2642117c5cc06cd2b43}} 
+bool {\bfseries w\+\_\+open\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a game manager. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_manager_afe8fcd570918a0198f82d688ddddfb04}\label{class_game_manager_afe8fcd570918a0198f82d688ddddfb04}} 
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{GameManager()}{GameManager()}}
+{\footnotesize\ttfamily Game\+Manager\+::\+Game\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_manager}{Game\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other} & The other \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_manager_afa37ab23c040b5225d567d4c9ab854e1}\label{class_game_manager_afa37ab23c040b5225d567d4c9ab854e1}} 
+\index{GameManager@{GameManager}!instance@{instance}}
+\index{instance@{instance}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_game_manager}{Game\+Manager}}\& Game\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an static instance of the \mbox{\hyperlink{class_game_manager}{Game\+Manager}} class, only one can be created at any time,. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_game_manager}{Game\+Manager}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_manager_a939e6a33d5ae31602f646a62cde0f2bb}\label{class_game_manager_a939e6a33d5ae31602f646a62cde0f2bb}} 
+\index{GameManager@{GameManager}!updateImGui@{updateImGui}}
+\index{updateImGui@{updateImGui}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{updateImGui()}{updateImGui()}}
+{\footnotesize\ttfamily void Game\+Manager\+::update\+Im\+Gui (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Texture \&}]{render,  }\item[{sf\+::\+Time}]{dT }\end{DoxyParamCaption})}
+
+
+
+Updtae the im graphical user interface. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em render} & The render \\
+\hline
+\mbox{\texttt{ in}}  & {\em dT} & The Delta time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game\+\_\+manager.\+h\end{DoxyCompactItemize}

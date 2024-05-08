@@ -1,0 +1,521 @@
+\hypertarget{class_background}{}\doxysection{Background Class Reference}
+\label{class_background}\index{Background@{Background}}
+Inheritance diagram for Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_background}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_background_a9440d9cc452b8703ca05d7a56e7e5fad}\label{class_background_a9440d9cc452b8703ca05d7a56e7e5fad}} 
+void \mbox{\hyperlink{class_background_a9440d9cc452b8703ca05d7a56e7e5fad}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_background_ad504d0ab2380adc25a60ecaa74865312}\label{class_background_ad504d0ab2380adc25a60ecaa74865312}} 
+void \mbox{\hyperlink{class_background_ad504d0ab2380adc25a60ecaa74865312}{imgui}} () override
+\begin{DoxyCompactList}\small\item\em Loads the information used by imgui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a4fef61c28de90ea23c2b6a2062f3990d}{update}} (float dt) override
+\begin{DoxyCompactList}\small\item\em Updates the object using the given dt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_ad67d0688787abd987d99ed69f313a7e7}{draw}} (sf\+::\+Render\+Texture \&texture) override
+\begin{DoxyCompactList}\small\item\em Draws the object in the texture given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a8f75a371c0b3991d3b9f42713956bc96}{parse\+Path}} (const char $\ast$\mbox{\hyperlink{class_background_a0960fbf8b87cf1fdd62e8e5ea848b3c0}{path}})
+\begin{DoxyCompactList}\small\item\em Takes an absolute path and makes it relative to the bin carpet in the folder. The texture must be in the \mbox{\hyperlink{class_game}{Game}} folder and outside the bin folder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a5526837fd0a0226a78b98f58592af023}{set\+\_\+position}} (float px, float py) override
+\begin{DoxyCompactList}\small\item\em Sets the position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_ac9e7a390ee79d5084cf69d875a4465b4}{set\+\_\+rotation}} (float \mbox{\hyperlink{class_background_a34a1c9b0945e2903043fc34aa65d0986}{rotation}}) override
+\begin{DoxyCompactList}\small\item\em Sets the rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a3d1d76ce8b4e23958bdccbc358a7259a}{set\+\_\+scale}} (float scx, float scy) override
+\begin{DoxyCompactList}\small\item\em Sets the scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_ac55e2bd2c3799f8044ea919312930a9a}{set\+\_\+size}} (float sx, float sy) override
+\begin{DoxyCompactList}\small\item\em Sets the size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_ac32f389c06b2ea03d2cf9fe4df46c7ce}{set\+\_\+color}} (sf\+::\+Color \mbox{\hyperlink{class_background_a5d11caf91833a7786861203df948309c}{color}}) override
+\begin{DoxyCompactList}\small\item\em Sets the color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_ac2d0b0becdb84202ce85f5334b384cc9}{set\+\_\+outlinecolor}} (sf\+::\+Color \mbox{\hyperlink{class_background_a99f9949e3d2663327625ccfc64b62cf3}{o\+\_\+color}}) override
+\begin{DoxyCompactList}\small\item\em Sets the outlinecolor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a17d45528df9573dc1a2a0505f57856fc}{set\+\_\+text}} (const char $\ast$\mbox{\hyperlink{class_background_a50747164c51be69534f9d323fb34d2a5}{text}}) override
+\begin{DoxyCompactList}\small\item\em Sets the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_ae8a6ddd2af6ac92df966668687e333fc}{set\+\_\+path}} (const char $\ast$\mbox{\hyperlink{class_background_a0960fbf8b87cf1fdd62e8e5ea848b3c0}{path}}) override
+\begin{DoxyCompactList}\small\item\em Sets the path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a337e560903db236e78bcccd9b88f8b77}{set\+\_\+velocity}} (float vx, float vy) override
+\begin{DoxyCompactList}\small\item\em Sets the velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a2cd0bca6318496151e23c155d6f142e2}{set\+\_\+texture}} (const char $\ast$filepath) override
+\begin{DoxyCompactList}\small\item\em Sets the texture. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_background_a34a1c9b0945e2903043fc34aa65d0986}{rotation}} () override
+\begin{DoxyCompactList}\small\item\em Returns rotation. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_background_a64713ec3ac16ef9b819e55e913ff4c60}{position}} () override
+\begin{DoxyCompactList}\small\item\em Returns the position. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_background_ae659c239b921217b8cd87b01f805268f}{scale}} () override
+\begin{DoxyCompactList}\small\item\em Returns the scale. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_background_a89b365345ed8d4bd6606a656e9bb4645}{size}} () override
+\begin{DoxyCompactList}\small\item\em Returns the size. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_background_ad1cac672cba3b29283b12f5984e2dc88}{area}} () override
+\begin{DoxyCompactList}\small\item\em Returns the area of the object. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{class_background_a5d11caf91833a7786861203df948309c}{color}} () override
+\begin{DoxyCompactList}\small\item\em Returns the fill color. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{class_background_a99f9949e3d2663327625ccfc64b62cf3}{o\+\_\+color}} () override
+\begin{DoxyCompactList}\small\item\em Returns the outline color. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_background_a50747164c51be69534f9d323fb34d2a5}{text}} () override
+\begin{DoxyCompactList}\small\item\em Returns the text. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_background_a0960fbf8b87cf1fdd62e8e5ea848b3c0}{path}} () override
+\begin{DoxyCompactList}\small\item\em Returns the path of the loaded file. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_background_a31ac9c3688908ab6b8a2b1f27d1937ed}{velocity}} () override
+\begin{DoxyCompactList}\small\item\em Return the velocity. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_background_a4d58cf77c5e7819949891a282ca7c376}{texture\+\_\+id}} () override
+\begin{DoxyCompactList}\small\item\em Returns the last texture used id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_background_a1a64b5ccb0d68dd70f877a9758915b2b}\label{class_background_a1a64b5ccb0d68dd70f877a9758915b2b}} 
+{\bfseries Background} (const \mbox{\hyperlink{class_background}{Background}} \&n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_background_ad1cac672cba3b29283b12f5984e2dc88}\label{class_background_ad1cac672cba3b29283b12f5984e2dc88}} 
+\index{Background@{Background}!area@{area}}
+\index{area@{area}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Background\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the area of the object. 
+
+\begin{DoxyReturn}{Returns}
+The area. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a6973e229fa41115a8c21149a8fdd4e36}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a5d11caf91833a7786861203df948309c}\label{class_background_a5d11caf91833a7786861203df948309c}} 
+\index{Background@{Background}!color@{color}}
+\index{color@{color}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily sf\+::\+Color Background\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the fill color. 
+
+\begin{DoxyReturn}{Returns}
+The color. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_ab8d3e00b5bc4aab7160639ae4b07de41}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ad67d0688787abd987d99ed69f313a7e7}\label{class_background_ad67d0688787abd987d99ed69f313a7e7}} 
+\index{Background@{Background}!draw@{draw}}
+\index{draw@{draw}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Background\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Texture \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the object in the texture given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_aa8d6afa511525f1eb243392cef635a2c}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a99f9949e3d2663327625ccfc64b62cf3}\label{class_background_a99f9949e3d2663327625ccfc64b62cf3}} 
+\index{Background@{Background}!o\_color@{o\_color}}
+\index{o\_color@{o\_color}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{o\_color()}{o\_color()}}
+{\footnotesize\ttfamily sf\+::\+Color Background\+::o\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the outline color. 
+
+\begin{DoxyReturn}{Returns}
+The color. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7545ddca9ba29a4b92731be1d3fb52f2}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a8f75a371c0b3991d3b9f42713956bc96}\label{class_background_a8f75a371c0b3991d3b9f42713956bc96}} 
+\index{Background@{Background}!parsePath@{parsePath}}
+\index{parsePath@{parsePath}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{parsePath()}{parsePath()}}
+{\footnotesize\ttfamily void Background\+::parse\+Path (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Takes an absolute path and makes it relative to the bin carpet in the folder. The texture must be in the \mbox{\hyperlink{class_game}{Game}} folder and outside the bin folder. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & The path to parse \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_a6c7562a02381976098ad2fc60ff7e6c8}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a0960fbf8b87cf1fdd62e8e5ea848b3c0}\label{class_background_a0960fbf8b87cf1fdd62e8e5ea848b3c0}} 
+\index{Background@{Background}!path@{path}}
+\index{path@{path}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily char$\ast$ Background\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the path of the loaded file. 
+
+\begin{DoxyReturn}{Returns}
+The path. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_add375403bfdc7fffe882bda52cfec424}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a64713ec3ac16ef9b819e55e913ff4c60}\label{class_background_a64713ec3ac16ef9b819e55e913ff4c60}} 
+\index{Background@{Background}!position@{position}}
+\index{position@{position}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Background\+::position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the position. 
+
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_afd5deac0c236f8555e29757bbd7bc3ba}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a34a1c9b0945e2903043fc34aa65d0986}\label{class_background_a34a1c9b0945e2903043fc34aa65d0986}} 
+\index{Background@{Background}!rotation@{rotation}}
+\index{rotation@{rotation}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily float Background\+::rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns rotation. 
+
+\begin{DoxyReturn}{Returns}
+The rotation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aa8d86262f2eb30753848fe707b312d33}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ae659c239b921217b8cd87b01f805268f}\label{class_background_ae659c239b921217b8cd87b01f805268f}} 
+\index{Background@{Background}!scale@{scale}}
+\index{scale@{scale}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Background\+::scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the scale. 
+
+\begin{DoxyReturn}{Returns}
+The scale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a102c922f300fc3cbb6850760ab023d8c}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ac32f389c06b2ea03d2cf9fe4df46c7ce}\label{class_background_ac32f389c06b2ea03d2cf9fe4df46c7ce}} 
+\index{Background@{Background}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_color()}{set\_color()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & The color \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a1862346051bc702915ff23ce51aba077}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ac2d0b0becdb84202ce85f5334b384cc9}\label{class_background_ac2d0b0becdb84202ce85f5334b384cc9}} 
+\index{Background@{Background}!set\_outlinecolor@{set\_outlinecolor}}
+\index{set\_outlinecolor@{set\_outlinecolor}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_outlinecolor()}{set\_outlinecolor()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+outlinecolor (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{o\+\_\+color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the outlinecolor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em o\+\_\+color} & The o color \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a50dbf7a7b563fc4e597e7af4cfced146}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ae8a6ddd2af6ac92df966668687e333fc}\label{class_background_ae8a6ddd2af6ac92df966668687e333fc}} 
+\index{Background@{Background}!set\_path@{set\_path}}
+\index{set\_path@{set\_path}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_path()}{set\_path()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+path (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & The path \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7490b2ed79b9d75ab5ecd93e193402fd}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a5526837fd0a0226a78b98f58592af023}\label{class_background_a5526837fd0a0226a78b98f58592af023}} 
+\index{Background@{Background}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{float}]{px,  }\item[{float}]{py }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em px} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em py} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a0d9423149dd3f0397afd3bc537486edc}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ac9e7a390ee79d5084cf69d875a4465b4}\label{class_background_ac9e7a390ee79d5084cf69d875a4465b4}} 
+\index{Background@{Background}!set\_rotation@{set\_rotation}}
+\index{set\_rotation@{set\_rotation}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_rotation()}{set\_rotation()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the rotation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rotation} & The rotation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a38c6d4f4f4f58dd362fef7e34613918e}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a3d1d76ce8b4e23958bdccbc358a7259a}\label{class_background_a3d1d76ce8b4e23958bdccbc358a7259a}} 
+\index{Background@{Background}!set\_scale@{set\_scale}}
+\index{set\_scale@{set\_scale}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_scale()}{set\_scale()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{scx,  }\item[{float}]{scy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the scale. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em scx} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em scy} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_afdc1e4f4a22a09424c693fc9fff5a441}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_ac55e2bd2c3799f8044ea919312930a9a}\label{class_background_ac55e2bd2c3799f8044ea919312930a9a}} 
+\index{Background@{Background}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{float}]{sx,  }\item[{float}]{sy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sx} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em sy} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a89ffc3256ceee664a90584d192c86e23}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a17d45528df9573dc1a2a0505f57856fc}\label{class_background_a17d45528df9573dc1a2a0505f57856fc}} 
+\index{Background@{Background}!set\_text@{set\_text}}
+\index{set\_text@{set\_text}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_text()}{set\_text()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em text} & The text \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a53f43a020a08bb7e38e053040dd604e1}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a2cd0bca6318496151e23c155d6f142e2}\label{class_background_a2cd0bca6318496151e23c155d6f142e2}} 
+\index{Background@{Background}!set\_texture@{set\_texture}}
+\index{set\_texture@{set\_texture}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_texture()}{set\_texture()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filepath} & The filepath \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a18418efc344b94453dbd4c7cf3c78452}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a337e560903db236e78bcccd9b88f8b77}\label{class_background_a337e560903db236e78bcccd9b88f8b77}} 
+\index{Background@{Background}!set\_velocity@{set\_velocity}}
+\index{set\_velocity@{set\_velocity}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{set\_velocity()}{set\_velocity()}}
+{\footnotesize\ttfamily void Background\+::set\+\_\+velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the velocity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vx} & The new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em vy} & The new value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a1d9892f8aed5109a601d0ef16b345c8b}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a89b365345ed8d4bd6606a656e9bb4645}\label{class_background_a89b365345ed8d4bd6606a656e9bb4645}} 
+\index{Background@{Background}!size@{size}}
+\index{size@{size}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Background\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the size. 
+
+\begin{DoxyReturn}{Returns}
+The size. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a62e376c80e370a53fc215e64d9f58b54}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a50747164c51be69534f9d323fb34d2a5}\label{class_background_a50747164c51be69534f9d323fb34d2a5}} 
+\index{Background@{Background}!text@{text}}
+\index{text@{text}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily char$\ast$ Background\+::text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the text. 
+
+\begin{DoxyReturn}{Returns}
+The text. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_a40403a5b6cf4afde01de7ac0886f8a97}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a4d58cf77c5e7819949891a282ca7c376}\label{class_background_a4d58cf77c5e7819949891a282ca7c376}} 
+\index{Background@{Background}!texture\_id@{texture\_id}}
+\index{texture\_id@{texture\_id}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{texture\_id()}{texture\_id()}}
+{\footnotesize\ttfamily unsigned int Background\+::texture\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the last texture used id. 
+
+\begin{DoxyReturn}{Returns}
+The id. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_abf16c5ac40801fdca3287db5c2333017}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a4fef61c28de90ea23c2b6a2062f3990d}\label{class_background_a4fef61c28de90ea23c2b6a2062f3990d}} 
+\index{Background@{Background}!update@{update}}
+\index{update@{update}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Background\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the object using the given dt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & Delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a9afbdf9d84d6f29b8a4da23d3a1880ca}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_background_a31ac9c3688908ab6b8a2b1f27d1937ed}\label{class_background_a31ac9c3688908ab6b8a2b1f27d1937ed}} 
+\index{Background@{Background}!velocity@{velocity}}
+\index{velocity@{velocity}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{velocity()}{velocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Background\+::velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the velocity. 
+
+\begin{DoxyReturn}{Returns}
+The velocity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aee8317583fa8ce40d32b79cec5f9d098}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game\+\_\+background.\+h\end{DoxyCompactItemize}
